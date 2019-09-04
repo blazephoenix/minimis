@@ -1,6 +1,7 @@
 /*esversion: 6*/
 
 //Target DOM Elements to manipulate
+const domHeadTitle = document.querySelector('head title');
 const domName = document.querySelector('div.root main h1')
 const domTitle = document.querySelectorAll('.desc span:not(.separator)');
 const domLinks = document.querySelectorAll('.social-icons a');
@@ -34,6 +35,7 @@ fetch('./data.json')
 const domManipulation = (data) => {
 
     //Add Name
+    domHeadTitle.innerText = data.name + " - " + data.title[0] + " | " + data.title[1] + " | " + data.title[2]
     domName.innerText = data.name;
 
     //Loop through titles
