@@ -1,0 +1,75 @@
+/*
+*============================================================================================================
+* BASE STYLES FOR THE PAGE
+*============================================================================================================
+*
+*/
+.root{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-grow:2;
+
+    h1{
+        font-weight: normal;
+        font-size: 80px;
+        text-transform: uppercase;
+
+        &::after{
+            content: ' ';
+            display: block;
+            height: 4px;
+            width: 100%;
+            background: #343434;
+        }
+    }
+
+    .desc{
+        width: 42%;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        @include margin(1em, 0, 1em, 0);
+
+        span{
+            letter-spacing: 5px;
+        }
+    }
+
+    .separator{
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: #343434;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: space-evenly;
+        width: 42%;
+        font-size: 50px;
+        @include margin(2em, 0, 2em, 0);
+    }
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 5px;
+}

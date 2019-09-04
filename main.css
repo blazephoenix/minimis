@@ -1,0 +1,258 @@
+/*
+*============================================================================================================
+* RESETS, TYPOGRAPHY & COLORS
+*============================================================================================================
+*
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #343434;
+}
+
+/*
+*============================================================================================================
+* BASE STYLES FOR THE PAGE
+*============================================================================================================
+*
+*/
+.root {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+main h1 {
+  font-weight: normal;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+main h1::after {
+  content: ' ';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #343434;
+}
+
+main .desc {
+  width: 42%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1em;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+main .desc span {
+  letter-spacing: 5px;
+}
+
+main .separator {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #343434;
+}
+
+main .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 42%;
+  font-size: 50px;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-bottom: 2em;
+  margin-left: 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+/*
+*============================================================================================================
+* ADDS RESPONSIVESNESS
+*============================================================================================================
+*
+*/
+@media screen and (max-width: 1200px) {
+  main h1 {
+    font-size: 60px;
+  }
+  main .desc {
+    width: 42%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+  main .desc span {
+    display: block;
+  }
+  main .social-icons {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main h1 {
+    font-size: 40px;
+  }
+  main .desc {
+    width: 42%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+  main .desc span {
+    display: block;
+  }
+  main .desc span:nth-child(odd) {
+    margin-top: 0.8em;
+    margin-right: 0;
+    margin-bottom: 0.8em;
+    margin-left: 0;
+  }
+  main .desc .separator {
+    display: none;
+  }
+  main .social-icons {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main h1 {
+    font-size: 60px;
+  }
+  main .desc {
+    width: 42%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+  main .desc span {
+    display: block;
+  }
+  main .desc span:nth-child(odd) {
+    margin-top: 0.8em;
+    margin-right: 0;
+    margin-bottom: 0.8em;
+    margin-left: 0;
+  }
+  main .desc .separator {
+    display: none;
+  }
+  main .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 42%;
+    font-size: 40px;
+    margin-top: 2em;
+    margin-right: 0;
+    margin-bottom: 0em;
+    margin-left: 0;
+  }
+  main .social-icons a {
+    margin-top: 0;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

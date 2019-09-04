@@ -1,0 +1,17 @@
+/*
+*============================================================================================================
+* RESETS, TYPOGRAPHY & COLORS
+*============================================================================================================
+*
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
+
+$ash-black : #343434;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:$ash-black;
+}

@@ -1,0 +1,113 @@
+/*
+*============================================================================================================
+* ADDS RESPONSIVESNESS
+*============================================================================================================
+*
+*/
+
+@media screen and (max-width: 1200px) {
+    main {
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .desc {
+            width: 42%;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            // border: 1px solid red;
+            @include margin(1em, 0, 1em, 0);
+
+            span {
+                display: block;
+            }
+        }
+
+        .social-icons {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .desc {
+            width: 42%;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // border: 1px solid red;
+            @include margin(1em, 0, 1em, 0);
+
+            span {
+                display: block;
+
+                &:nth-child(odd) {
+                    @include margin(0.8em, 0, 0.8em, 0);
+                }
+            }
+
+            .separator {
+                display: none;
+            }
+        }
+
+        .social-icons {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .desc {
+            width: 42%;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // border: 1px solid red;
+            @include margin(1em, 0, 1em, 0);
+
+            span {
+                display: block;
+
+                &:nth-child(odd) {
+                    @include margin(0.8em, 0, 0.8em, 0);
+                }
+            }
+
+            .separator {
+                display: none;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 42%;
+            font-size: 40px;
+            @include margin(2em, 0, 0em, 0);
+
+            a {
+                @include margin(0, 0.5em, 0, 0.5em);
+            }
+        }
+    }
+}
