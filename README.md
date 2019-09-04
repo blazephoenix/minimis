@@ -45,7 +45,7 @@ Minimis is a minimal, efficiency focused portfolio template. It is intended to b
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/blazephoenix/minimis/tags). 
+Used [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/blazephoenix/minimis/tags). 
 
 ## Authors
 
