@@ -2,6 +2,13 @@
 
 Minimis is a minimal, efficiency focused portfolio template. It is intended to be used as a portal to four of your most important profiles on the internet that you would like a potential employer to see.
 
+## Features
+
+* Color customization with SASS
+* Fully responsive design
+* No extra prerequisites needed
+* Localized API with JSON
+
 ## Getting Started
 
 * Download and unzip the folder.
