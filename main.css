@@ -65,7 +65,6 @@ main h1::after {
 }
 
 main .desc {
-  width: 42%;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   display: -webkit-box;
@@ -93,6 +92,10 @@ main .separator {
   height: 5px;
   border-radius: 100%;
   background: #343434;
+  margin-top: 0;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0.5em;
 }
 
 main .social-icons {

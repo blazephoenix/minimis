@@ -1,0 +1,11 @@
+{
+  "name": "minimis",
+  "version": "1.0.0",
+  "description": "A minimal portfolio template using pure HTML/CSS",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanmay Naik",
+  "license": "MIT"
+}

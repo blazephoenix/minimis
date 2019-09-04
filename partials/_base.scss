@@ -34,7 +34,7 @@ main{
     }
 
     .desc{
-        width: 42%;
+        // width: 42%;
         font-family: 'Roboto Mono', monospace;
         font-size: 16px;
         display: flex;
@@ -53,6 +53,7 @@ main{
         height: 5px;
         border-radius: 100%;
         background: #343434;
+        @include margin(0, 0.5em, 0, 0.5em);
     }
 
     .social-icons{
