@@ -12,7 +12,7 @@ Minimis is a minimal, efficiency focused portfolio template. It is intended to b
 ## Getting Started
 
 * Download and unzip the folder.
-* Open the `data.json` file and add in your personal details,
+* Open the `api.js` file in the `js/` directory and add in your personal details,
 ```
 {
     "name" : "John Doe", //Name
